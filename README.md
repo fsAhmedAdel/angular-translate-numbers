@@ -1,5 +1,7 @@
 📙 A light-weight utility to translate numbers from one Type to another that are dependent on `DECIMAL SYSTEM` but as default it converts from  `Arabic(Western)` numbers like `(1,2,251,..)` into `Arabic(Eastern)` like ` (١,٢,٢٥١,..) `  
 
+[demo](https://stackblitz.com/edit/angular-ivy-fqbfvx?devtoolsheight=33&file=src/app/app.component.ts)
+
 ## 📌 Supported Numeral systems
 `Arabic,
 Gujarati,
@@ -58,15 +60,18 @@ import {TranslateNumbersService,NumberType } from 'angular-translate-numbers';
 ```
 
 ## 📌 Coding 
+
  ```javascript
 Translate(value : string, to?: NumberType , `from`?: NumberType ): string;
  ```
 `value` 
 -the value that has numbers and wanted to be translated
+
 `to` 
 -The Numeral systems that the value will be translated to 
 -Optional  
 -Default is Arabic / Arabic_Hindi / Arabic_Eastern /
+
 `from`
 -the Numeral systems that is the input is already in 
 -Optional 
@@ -78,6 +83,7 @@ Translate(value : string, to?: NumberType , `from`?: NumberType ): string;
 ```
 `value`
 -the value that Already Translated And Want to Convert it To Number
+
 `from`
 -the Numeral systems that is the input is already in
 
@@ -126,6 +132,11 @@ let digitsValueAsNumber2 = this.service.Number(number_Assamese_Type,NumberType.J
 //result =>  NAN
 //was not converted to number as the 'from' Number Type was not correct
 ```
+
+## 📌 Demo & github
+[demo](https://stackblitz.com/edit/angular-ivy-fqbfvx?devtoolsheight=33&file=src/app/app.component.ts)
+[github](https://github.com/fsAhmedAdel/angular-translate-numbers)
+
 
 > 👋 In upcoming versions, we might add more Numeral Types of angular pipes so please feedback for issues or wanted Numeral systems .
 
