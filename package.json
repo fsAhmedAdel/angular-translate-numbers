@@ -5,6 +5,7 @@
     "@angular/common": "^13.2.0",
     "@angular/core": "^13.2.0"
   },
+  "keywords": ["Angular","Translate","Numbers","Arabic","Digits","Dynamic"],
   "module": "fesm2015/angular-translate-numbers.mjs",
   "es2020": "fesm2020/angular-translate-numbers.mjs",
   "esm2020": "esm2020/angular-translate-numbers.mjs",
