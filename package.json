@@ -1,0 +1,31 @@
+{
+  "name": "angular-translate-numbers",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^13.2.0",
+    "@angular/core": "^13.2.0"
+  },
+  "module": "fesm2015/angular-translate-numbers.mjs",
+  "es2020": "fesm2020/angular-translate-numbers.mjs",
+  "esm2020": "esm2020/angular-translate-numbers.mjs",
+  "fesm2020": "fesm2020/angular-translate-numbers.mjs",
+  "fesm2015": "fesm2015/angular-translate-numbers.mjs",
+  "typings": "angular-translate-numbers.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./angular-translate-numbers.d.ts",
+      "esm2020": "./esm2020/angular-translate-numbers.mjs",
+      "es2020": "./fesm2020/angular-translate-numbers.mjs",
+      "es2015": "./fesm2015/angular-translate-numbers.mjs",
+      "node": "./fesm2015/angular-translate-numbers.mjs",
+      "default": "./fesm2020/angular-translate-numbers.mjs"
+    }
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
