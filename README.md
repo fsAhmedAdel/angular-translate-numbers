@@ -1,6 +1,6 @@
 📙 A light-weight utility to translate numbers from one Type to another that are dependent on `DECIMAL SYSTEM` but as default it converts from  `Arabic(Western)` numbers like `(1,2,251,..)` into `Arabic(Eastern)` like ` (١,٢,٢٥١,..) `  
 
-[demo](https://stackblitz.com/edit/angular-ivy-fqbfvx?devtoolsheight=33&file=src/app/app.component.ts)
+[demo](https://stackblitz.com/edit/angular-translate-numbers)
 
 ## 📌 Supported Numeral systems
 `Arabic,
@@ -60,7 +60,8 @@ import {TranslateNumbersService,NumberType } from 'angular-translate-numbers';
 ```
 
 ## 📌 Coding 
-
+### ⚙️ Using Service (`TranslateNumbersService`)
+> 👋 for `typeScript` Files using .
  ```javascript
 Translate(value : string, to?: NumberType , `from`?: NumberType ): string;
  ```
@@ -133,10 +134,24 @@ let digitsValueAsNumber2 = this.service.Number(number_Assamese_Type,NumberType.J
 //was not converted to number as the 'from' Number Type was not correct
 ```
 
+### ⚙️ Using Pipe (`TranslateNumbersPipe`)
+> 👋 for `template` using .
+
+``` html
+
+{{ 123456 | translateNumbers }}<!-- default converts to aranic-->
+<!-- Result  ١٢٣٤٥٦ -->
+{{ 123456 | translateNumbers: NumberTypes.Arabic }} <!-- example to change 'to' Type -->
+<!-- Result  ١٢٣٤٥٦ -->
+{{ "١٢٣٤٥٦" | translateNumbers: NumberTypes.Assamese: NumberTypes.Arabic}}<!-- example to change 'to' Type from another type-->
+<!-- Result  ১২৩৪৫৬ -->
+{{ "১২৩৪৫৬" | translateNumbers: NumberTypes.Digits:NumberTypes.Assamese }})<!-- example to change 'to' Digits from another type-->
+<!-- Result  123456 -->
+```
 ## 📌 Demo & github
-[demo](https://stackblitz.com/edit/angular-ivy-fqbfvx?devtoolsheight=33&file=src/app/app.component.ts)
+[demo](https://stackblitz.com/edit/angular-translate-numbers)
 [github](https://github.com/fsAhmedAdel/angular-translate-numbers)
 
 
-> 👋 In upcoming versions, we might add more Numeral Types of angular pipes so please feedback for issues or wanted Numeral systems .
+> 👋 In upcoming versions, we might add more Numeral Types so please feedback for issues or wanted Numeral systems .
 
